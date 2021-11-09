@@ -1,10 +1,10 @@
-const numberOfCategories = document.querySelector('#categories')
+const numberOfCategoriesEl = document.querySelector('#categories')
 
-console.log(`Number of categories: ${numberOfCategories.children.length}`)
+console.log(`Number of categories: ${numberOfCategoriesEl.children.length}`)
 
 document.querySelectorAll('.item h2').forEach((elem) =>
   console.log(
-    `Category: ${elem.textContent}, 
+    `Category: ${elem.textContent} 
 Elements: ${elem.nextElementSibling.children.length}`,
   ),
 )
